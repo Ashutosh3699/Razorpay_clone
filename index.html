@@ -7,79 +7,129 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body cz-shortcut-listen="true">
 
-    <nav class="bg-deepBlue">
+    <div class="relative overflow-x-hidden h-[100vh]">
 
-        <div class="relative w-[1080px] mx-auto  flex justify-between items-center">
-
-            <a href="#" class="cursor-pointer py-7 pr-7">
-                <img src="./images/logo.svg" width="125px" height="30px">
-            </a>
-
-            <ul class="flex space-x-6">
-
-                <li class="font-mullish text-white relative py-7 hover:text-lightBlue transition-all duration-200 cursor-pointer group">
-
-                    <a href="#">Payments</a>
-                    <div class="bg-lightBlue absolute bottom-0 h-1 w-full hidden group-hover:block transition-all duration-200"></div>
-                </li>
-
-                <li class="font-mullish text-white relative py-7 hover:text-lightBlue transition-all duration-200 cursor-pointer group">
-
-                    <a href="#">Banking+</a>
-                    <div class="bg-lightBlue absolute bottom-0 h-1 w-full hidden group-hover:block transition-all duration-200"></div>
-                </li>
-
-                <li class="font-mullish text-white relative py-7 hover:text-lightBlue transition-all duration-200 cursor-pointer group">
-
-                    <a href="#">Payroll</a>
-                    <div class="bg-lightBlue absolute bottom-0 h-1 w-full hidden group-hover:block transition-all duration-200"></div>
-                </li>
-
-                <li class="font-mullish text-white relative py-7 hover:text-lightBlue transition-all duration-200 cursor-pointer group">
-
-                    <a href="#">Partners</a>
-                </li>
-
-                <li class="font-mullish text-white relative py-7 hover:text-lightBlue transition-all duration-200 cursor-pointer group">
-
-                    <a href="#">Resources</a>
-                    <div class="bg-lightBlue absolute bottom-0 h-1 w-full hidden group-hover:block transition-all duration-200"></div>
-                </li>
-
-                <li class="font-mullish text-white relative py-7 hover:text-lightBlue transition-all duration-200 cursor-pointer group">
-
-                    <a href="#">Support</a>
-                    <div class="bg-lightBlue absolute bottom-0 h-1 w-full hidden group-hover:block transition-all duration-200"></div>
-                </li>
-
-                <li class="font-mullish text-white relative py-7 hover:text-lightBlue transition-all duration-200 cursor-pointer group">
-
-                    <a href="#">Pricing</a>
-                    <div class="bg-lightBlue absolute bottom-0 h-1 w-full hidden group-hover:block transition-all duration-200"></div>
-                </li>
-
-            </ul>
-
-            <div class="flex space-x-6">
-
-                <img src="./images/india-flag.svg" alt="" width="28px" height="20px">
-                    
-                <button class="text-white py-3 px-5 border-lightBlue border rounded text-sm 
-                 font-bold">Log in</button>
-
-                 <button class="text-lightBlue300 py-3 px-5 bg-white border rounded text-sm transition-all duration-200
-                 font-bold text-center hover:text-lightBlue500 hover:border-lightBlue hover:border flex items-center" > Sign Up
-                 <svg viewBox="0 0 24 24" focusable="false" class="w-[15px] h-[15px] ml-2 relative bottom-0">
-                    <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
-                </svg>
-                </button>
-
+        <!-- nav_bar section -->
+        <nav class="bg-deepBlue">
+    
+            <div class="relative w-[1080px] mx-auto  flex justify-between items-center">
+    
+                <a href="#" class="cursor-pointer py-7 pr-7">
+                    <img src="./images/logo.svg" width="125px" height="30px">
+                </a>
+    
+                <ul class="flex space-x-6">
+    
+                    <li class="font-mullish text-white relative py-7 hover:text-lightBlue transition-all duration-200 cursor-pointer group">
+    
+                        <a href="#">Payments</a>
+                        <div class="bg-lightBlue absolute bottom-0 h-1 w-full hidden group-hover:block transition-all duration-200"></div>
+                    </li>
+    
+                    <li class="font-mullish text-white relative py-7 hover:text-lightBlue transition-all duration-200 cursor-pointer group">
+    
+                        <a href="#">Banking+</a>
+                        <div class="bg-lightBlue absolute bottom-0 h-1 w-full hidden group-hover:block transition-all duration-200"></div>
+                    </li>
+    
+                    <li class="font-mullish text-white relative py-7 hover:text-lightBlue transition-all duration-200 cursor-pointer group">
+    
+                        <a href="#">Payroll</a>
+                        <div class="bg-lightBlue absolute bottom-0 h-1 w-full hidden group-hover:block transition-all duration-200"></div>
+                    </li>
+    
+                    <li class="font-mullish text-white relative py-7 hover:text-lightBlue transition-all duration-200 cursor-pointer group">
+    
+                        <a href="#">Partners</a>
+                    </li>
+    
+                    <li class="font-mullish text-white relative py-7 hover:text-lightBlue transition-all duration-200 cursor-pointer group">
+    
+                        <a href="#">Resources</a>
+                        <div class="bg-lightBlue absolute bottom-0 h-1 w-full hidden group-hover:block transition-all duration-200"></div>
+                    </li>
+    
+                    <li class="font-mullish text-white relative py-7 hover:text-lightBlue transition-all duration-200 cursor-pointer group">
+    
+                        <a href="#">Support</a>
+                        <div class="bg-lightBlue absolute bottom-0 h-1 w-full hidden group-hover:block transition-all duration-200"></div>
+                    </li>
+    
+                    <li class="font-mullish text-white relative py-7 hover:text-lightBlue transition-all duration-200 cursor-pointer group">
+    
+                        <a href="#">Pricing</a>
+                        <div class="bg-lightBlue absolute bottom-0 h-1 w-full hidden group-hover:block transition-all duration-200"></div>
+                    </li>
+    
+                </ul>
+    
+                <div class="flex space-x-6">
+    
+                    <img src="./images/india-flag.svg" alt="" width="28px" height="20px">
+                        
+                    <button class="text-white py-3 px-5 border-lightBlue border rounded text-sm 
+                     font-bold">Log in</button>
+    
+                     <button class="text-lightBlue300 py-3 px-5 bg-white border rounded text-sm transition-all duration-200
+                     font-bold text-center hover:text-lightBlue500 hover:border-lightBlue hover:border flex items-center" > Sign Up
+                     <svg viewBox="0 0 24 24" focusable="false" class="w-[15px] h-[15px] ml-2 relative bottom-0">
+                        <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                    </svg>
+                    </button>
+    
+                </div>
+    
             </div>
+    
+        </nav>
+    
+        <!-- hero section -->
+        <div class="bg-deepBlue  relative ">
+    
+            <!-- top section -->
+            <div class="w-10/12 max-w-[1080px] mx-auto flex flex-row justify-between items-center ">
+    
+                <!-- content -->
+                <div class="space-y-8">
+                    <!-- heading -->
+                    <div class="text-white text-[40px] font-bold font-mullish leading-[1.2] ">Power your finance, grow your business</div>
+        
+                    <!-- green line -->
+                    <div class="w-6 h-1 bg-green-400"></div>
+                    <!-- subHeading -->
+                    <div class="text-gray-400 text-lg font-mullish text-[18px]">Accept payments from customers. Automate payouts to vendors & employees. Never run out of working capital.</div>
+                
+                    <!-- button -->
+                    <div class="bg-lightBlue text-white rounded-md font-mullish font-bold py-[14px] px-[18px] w-[140px]
+                        cursor-pointer transition-all duration-200 hover:bg-lightBlue500">Sign Up Now</div>
+                </div>
+                
+                <!-- image  -->
+                <img src="./images/assets/hero-illustration.jpg" class="w-full max-w-[680px]">
+        
+            </div>
+    
+            <!-- bottom section -->
+    
+            <div class="absolute left-0 right-0 w-[103%] ">
+                <img src="./images/assets/hero-shape.svg" alt="" class="w-full object-fill scale-x-100">
+            </div>
+
         </div>
 
-    </nav>
+
+
+
+
+
+
+
+
+
+
+    </div>
     
 </body>
 </html>
