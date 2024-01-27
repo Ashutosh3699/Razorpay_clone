@@ -57,3 +57,29 @@
 
     opacity: 1;
 }
+
+.corefeature{
+
+    background-size: 100% 100%;
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+}
+
+.companyList{
+
+    animation: companyMove 10s linear 0s infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes companyMove {
+    
+    0%{
+
+        top: 0%;
+    }
+
+    100%{
+        top: -60%;
+    }
+
+}
