@@ -20,12 +20,12 @@
 </head>
 <body cz-shortcut-listen="true">
 
-    <div class=" overflow-x-hidden h-[100vh] overflow-y-auto">
+    <div class=" overflow-x-hidden h-[100vh] overflow-y-auto ">
 
         <!-- top most section -->
 
         <div
-        class="w-full flex flex-row justify-between items-center bg-white  relative overflow-x-hidden"
+        class="w-full flex flex-row justify-between items-center bg-white absolute md:relative overflow-x-hidden opacity-0 md:opacity-100"
         >
             <div 
             class="w-16 bg-[#F4F8FF] relative h-12 skew-x-[30deg] -left-10">
@@ -59,7 +59,7 @@
                     <img src="./images/logo.svg" width="125px" height="30px">
                 </a>
     
-                <ul class="flex space-x-6">
+                <ul class="flex space-x-6 opacity-0 lg:opacity-100 absolute lg:relative">
     
                     <li class="font-mullish text-white relative py-7 hover:text-lightBlue transition-all duration-200 cursor-pointer group">
     
@@ -104,7 +104,7 @@
     
                 </ul>
     
-                <div class="flex space-x-6">
+                <div class="lg:flex space-x-6 hidden ">
     
                     <img src="./images/india-flag.svg" alt="" width="28px" height="20px">
                         
@@ -128,12 +128,12 @@
         <div class="bg-deepBlue  relative ">
     
             <!-- top section -->
-            <div class="w-10/12 max-w-[1080px] mx-auto flex flex-row justify-between items-center ">
+            <div class="w-10/12 max-w-[1080px] mx-auto flex flex-col lg:flex-row justify-between items-center ">
     
                 <!-- content -->
                 <div class="space-y-8">
                     <!-- heading -->
-                    <div class="text-white text-[40px] font-bold font-mullish leading-[1.2] ">Power your finance, grow your business</div>
+                    <div class="text-white text-[30px] md:text-[40px] font-bold font-mullish leading-[1.2] ">Power your finance, grow your business</div>
         
                     <!-- green line -->
                     <div class="w-6 h-1 bg-green-400"></div>
@@ -169,45 +169,47 @@
             <div class="w-11/12 max-w-[1080px] mx-auto relative space-y-4">
 
                 <!-- heading -->
-                <h1 class="text-center font-mullish text-[1.2rem] font-extrabold">Accept Payments with Razorpay Payment Suite</h1>
+                <h1 class="text-center font-mullish text-[1.2rem] font-extrabold hidden sm:block">Accept Payments with Razorpay Payment Suite</h1>
+
+                <h1 class="text-center font-mullish text-[1.2rem] font-extrabold block sm:hidden">Explore Razorpay Payment Suite</h1>
 
                 <!-- green box -->
                 <div class="w-8 h-1 bg-green-400 mx-auto"></div>
 
                 <!-- content section -->
-                <div class="flex w-full border border-gray-200  rounded-md flex-col space-y-8 bg-[url('./images/assets/payment-suite.png')] 
-                    bg-contain bg-right bg-no-repeat py-10 pl-8  bg-white shadow-[1px_1px_10px_1px_rgba(0,0,0,0.3)]">
+                <div class="flex w-full border border-gray-200  rounded-md flex-col space-y-8 bg-[url('./images/assets/payment-suite.png')] bg-origin-content
+                    md:bg-contain bg-bottom md:bg-right bg-no-repeat py-10 pl-8  bg-white shadow-[1px_1px_10px_1px_rgba(0,0,0,0.3)]  ">
 
-                    <div class="text-[2rem] font-bold font-mullish w-[50%]">Supercharge your business with the all‑powerful <span class="text-lightBlue">Payment Gateway</span></div>
+                    <div class="text-[1rem] md:text-[2rem] font-bold font-mullish w-full md:w-[50%]">Supercharge your business with the all‑powerful <span class="text-lightBlue">Payment Gateway</span></div>
 
                     <ul class=" my-2 space-y-3">
 
-                        <li class="flex items-center font-mullish space-x-4">
+                        <li class="flex items-center font-mullish space-x-4 scale-75 md:scale-100">
                             <i class="fas fa-check text-green-500"></i>
                             <span>100+ Payment Methods</span>
                         </li>
 
-                        <li class="flex items-center font-mullish space-x-4">
+                        <li class="flex items-center font-mullish space-x-4 scale-75 md:scale-100">
                             <i class="fas fa-check text-green-500"></i>
                             <span>Industry Leading Success Rate</span>
                         </li>
 
-                        <li class="flex items-center font-mullish space-x-4">
+                        <li class="flex items-center font-mullish space-x-4 scale-75 md:scale-100">
                             <i class="fas fa-check text-green-500"></i>
                             <span>Superior Checkout Experience</span>
                         </li>
 
-                        <li class="flex items-center font-mullish space-x-4">
+                        <li class="flex items-center font-mullish space-x-4 scale-75 md:scale-100">
                             <i class="fas fa-check text-green-500"></i>
                             <span>Easy to Integrate</span>
                         </li>
 
-                        <li class="flex items-center font-mullish space-x-4">
+                        <li class="flex items-center font-mullish space-x-4 scale-75 md:scale-100">
                             <i class="fas fa-check text-green-500"></i>
                             <span>Instant Settlements from day 1</span>
                         </li>
 
-                        <li class="flex items-center font-mullish space-x-4">
+                        <li class="flex items-center font-mullish space-x-4 scale-75 md:scale-100">
                             <i class="fas fa-check text-green-500"></i>
                             <span>In-depth Reporting and Insights</span>
                         </li>
@@ -215,9 +217,9 @@
                     </ul>
 
                     <!-- button -->
-                    <div class="flex space-x-3 items-baseline">
+                    <div class="flex space-x-3 md:items-baseline flex-col-reverse gap-y-2  md:flex-row">
 
-                        <div class="bg-lightBlue text-white rounded-md font-mullish font-bold py-[14px] px-[18px] w-[150px] text-sm
+                        <div class="bg-lightBlue text-white rounded-md font-mullish font-bold py-[14px] px-[18px] w-[300px] md:w-[150px] text-sm
                         cursor-pointer transition-all duration-200 hover:bg-lightBlue500 flex items-center ">Sign Up Now 
                             <svg viewBox="0 0 24 24" focusable="false" class="w-[15px] h-[15px] ml-2 relative bottom-0">
                                 <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
@@ -237,16 +239,17 @@
                 </div>
             </div>
 
-            <img src="./images/assets/feature-section1-dottedrows.png" alt="" class="absolute right-3 top-0 -z-10 rotate-180" loading="lazy">
+            <img src="./images/assets/feature-section1-dottedrows.png" alt="" 
+            class="absolute right-3 top-0 -z-10 rotate-180 hidden lg:block" loading="lazy">
 
-            <div class="h-10 absolute left-[10%] -top-7 overflow-hidden">
+            <div class="h-10 absolute left-[10%] -top-7 overflow-hidden hidden lg:block">
                 <img src="./images/assets/feature-section1-dottedrows.png" alt="" loading="lazy">
             </div>
 
 
             <!-- top level div for cards -->
 
-            <div class="relative my-5 grid grid-cols-3 gap-3 w-11/12 max-w-[1080px] mx-auto space-y-4 ">
+            <div class="relative my-5 grid md:grid-cols-2 lg:grid-cols-3 gap-3 w-11/12 max-w-[1080px] mx-auto space-y-4 ">
 
                 <!-- box1 content -->
                 <div class="w-full relative cursor-pointer min-h-[15rem] mt-4 hover:drop-shadow-[0_25px_25px_rgb(0,0,0,0.1)] 
@@ -490,10 +493,10 @@
 
             <div 
             class="my-4 mx-auto relative w-11/12 max-w-[1080px] py-4 text-center border border-lightBlue300 rounded-md h-14 
-                bg-gradient-to-b from-[#4f8aff46] to-white space-x-">
-                <span class=" font-mullish font-extrabold text-sm text-deepBlueHead ">Not sure which product to choose?</span>
+                bg-gradient-to-b from-[#4f8aff46] to-white space-x-2">
+                <span class=" font-mullish font-extrabold text-sm text-deepBlueHead hidden md:inline-block">Not sure which product to choose?</span>
 
-                <span class="font-mullish font-light text-sm text-deepBlueHead">Answer a few questions and we'll help you out</span>
+                <span class="font-mullish font-light text-sm text-deepBlueHead hidden sm:inline-block">Answer a few questions and we'll help you out</span>
 
                 <span 
                 class="font-mullish font-bold text-sm text-lightBlue hover:bg-lightBlue hover:text-white cursor-pointer group"
@@ -512,7 +515,7 @@
 
         <!-- top level div -->
         <section
-            class=" bg-[url('./images/assets/feature-section-2BG.svg')] bg-cover bg-no-repeat pb-[500px] mt-14 pt-[10rem]">
+            class="bg-[url('./images/assets/feature-section-2BG.svg')] bg-cover bg-no-repeat pb-[150px] md:pb-[500px] mt-14 md:pt-[10rem] pt-[5rem] ">
 
             
             <!-- container -->
@@ -520,7 +523,7 @@
                 
                 <!-- heading -->
                 <h3
-                class="text-center font-mullish text-white text-2xl leading-[1.25rem] font-bold my-6"
+                class="text-center font-mullish text-white text-2xl leading-9 sm:leading-[1.25rem] font-bold my-6"
                 >Explore RazorpayX powered Business Banking</h3>
     
                 <!-- green line -->
@@ -545,14 +548,14 @@
 
                             <!-- article name -->
                             <h1
-                            class="font-mullish text-white text-[28px] leading-10 font-bold  max-w-[540px]"
+                            class="font-mullish text-white text-[18px] md:text-[28px] leading-10 font-bold  max-w-[540px]"
                             >Manage your company’s finances and supercharge your business banking with
                                 <img src="./images/assets/razorpayX.svg" alt="" class="inline-block">
                                 <span 
                                 class="text-greenLight">Business Banking</span>
                             </h1>
 
-                            <ul class="my-2 space-y-3 text-white">
+                            <ul class="my-0 md:my-2 space-y-3 text-white text-sm md:text-base">
 
                                 <li class="flex items-center font-mullish space-x-4">
                                     <i class="fas fa-check text-green-300"></i>
@@ -576,7 +579,7 @@
 
                             </ul>
 
-                            <div class="flex gap-4">
+                            <div class="flex gap-4 flex-col-reverse sm:flex-row">
 
                                 <div class="bg-lightBlue text-white rounded-md font-mullish font-bold py-[14px] px-[18px] w-[165px] text-sm
                                     cursor-pointer transition-all duration-200 hover:bg-lightBlue500 flex items-center ">Sign Up Now 
@@ -601,7 +604,7 @@
                         <img src="./images/assets/buisness-banking.png" alt=""
                         width="600px"
                         height="500px"
-                        class="absolute top-0 bottom-0 right-0 z-5 max-w-">
+                        class="absolute md:top-0 bottom-0 right-0 z-5 md:inline-block hidden ">
 
 
                     </div>
@@ -615,7 +618,7 @@
             <!-- box card - 3 -->
     
             <!-- top level -->
-            <div class="relative my-5 grid grid-cols-3 gap-3 w-11/12 max-w-[1080px] mx-auto space-y-4 ">
+            <div class="relative my-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 w-11/12 max-w-[1080px] mx-auto space-y-4 ">
     
                 <!-- box card-1 -->
                 <div class="w-full relative cursor-pointer min-h-[15rem] mt-4  transition-all duration-1000"  >
@@ -756,21 +759,21 @@
 
 
             <div class="relative my-16 w-11/12 max-w-[1080px] mx-auto border-slate-700 border rounded-lg py-8 
-                flex justify-center items-center">
+                flex justify-center items-center md:flex-row flex-col">
 
-                <span class="text-xl font-mullish  text-white">Check out the live demo to learn how RazorpayX works.
-                    <span class="font-bold">No sign-up required!</span>
+                <span class="text-xs md:text-xl font-mullish  text-white block ">Check out the live demo to learn how RazorpayX works.
+                    <span class="font-bold sm:inline-block hidden">No sign-up required!</span>
                 </span>
 
                 <div 
                 class="bg-lightBlue text-white rounded-md font-mullish font-bold py-[14px] px-[18px]  text-sm w-[220px]
-                    cursor-pointer transition-all duration-200 hover:bg-lightBlue500 flex items-center ml-12">
+                    cursor-pointer transition-all duration-200 hover:bg-lightBlue500 flex items-center ml-12 ">
                     Check out the demo
                     <svg viewBox="0 0 24 24" focusable="false" class="w-[20px] h-[20px] ml-2 relative bottom-0 z-10 left-2">
                         <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
                     </svg>
 
-                    <div class="w-[40px] h-[55px] skew-x-12 bg-greenLight absolute right-[4.8rem] opacity-90" ></div>
+                    <div class="w-[40px] h-[55px] skew-x-12 bg-greenLight absolute right-[4.1rem] lg:opacity-90 opacity-0 " ></div>
                 </div>
 
 
@@ -797,7 +800,7 @@
 
             <!-- total 6 col grid -->
 
-            <div class="w-11/12 max-w-[1080px] mx-auto relative grid grid-cols-3 gap-4 ">
+            <div class="w-11/12 max-w-[1080px] mx-auto relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
 
                 <!-- box1 -> intro -->
                 <div class="w-full py-6 pl-0 pr-6">
@@ -973,7 +976,7 @@
 
         <!-- top level -->
         <section
-            class="w-full bg-[url(./images/assets/core-features-sectionBg.svg)] 
+            class="w-full md:bg-[url(./images/assets/core-features-sectionBg.svg)] bg-gradient-to-b from-violet-500 via-blue-500 to-fuchsia-500
             bg-no-repeat bg-cover bg-center mt-14  relative corefeature z-20"
         >
 
@@ -988,7 +991,7 @@
                 >Empower your business with all the right tools to accept online payments and provide the best customer experience</p>
 
                 <!-- card->box-8(grid) -->
-                <div class="grid grid-cols-4 gap-[3rem] mt-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[3rem] mt-8">
 
                     <!-- card1 -->
 
@@ -1128,13 +1131,13 @@
         <!-- join razorpay section -->
 
         <section 
-            class="bg-[#f5f8fe] relative pt-40 pb-12 mt-[-200px] ">
+            class="bg-[#f5f8fe] relative pt-40 pb-12 mt-[-100px] lg:mt-[-200px] ">
 
-            <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-row ">
+            <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-col lg:flex-row ">
 
                 <!-- left part of content -->
 
-                <div class="flex flex-col justify-center max-w-[calc(100%-500px)]">
+                <div class="flex flex-col justify-center w-full lg:max-w-[calc(100%-500px)]">
 
                     <h2
                     class="text-deepBlueHead font-mullish font-bold text-2xl"
@@ -1215,7 +1218,8 @@
                 <!-- left slider button -->
 
                 <button
-                class="w-[100px] h-[100px] rounded-full absolute left-0 top-1/2 bg-[#f4f8ff] flex justify-center items-center"
+                class="w-[100px] h-[100px] rounded-full absolute left-0 top-1/2 bg-[#f4f8ff] md:flex justify-center items-center
+                    hidden"
                 >
                     <div 
                     class="w-[65%] h-[65%] rounded-full bg-[#f4f8ff] mix-blend-multiply flex justify-center items-center">
@@ -1230,7 +1234,8 @@
                 <!-- right slider button -->
 
                 <button
-                class="w-[100px] h-[100px] rounded-full absolute right-0 top-1/2 bg-[#f4f8ff] flex justify-center items-center"
+                class="w-[100px] h-[100px] rounded-full absolute right-0 top-1/2 bg-[#f4f8ff] md:flex justify-center items-center
+                 hidden"
                 >
                     <div 
                     class="w-[65%] h-[65%] rounded-full bg-[#f4f8ff] mix-blend-multiply flex justify-center items-center"
@@ -1245,7 +1250,7 @@
 
                 <!-- content container -->
 
-                <div class="flex flex-row justify-between max-w-[960px] items-center my-20 mx-auto">
+                <div class="flex flex-col md:flex-row justify-between max-w-[960px] items-center my-20 mx-auto">
 
                     <img src="./images/assets/testimonial.jpg" alt=""
                     loading="lazy"
@@ -1267,7 +1272,7 @@
                         >
                         
                         <p
-                        class="text-3xl font-mullish font-extralight"
+                        class="text-2xl md:text-3xl font-mullish font-extralight"
                         >
                             Single Flow To Collect And Disburse Payments
                         </p>
@@ -1277,11 +1282,11 @@
                         >Learn More</a>
 
                         <h2
-                        class="font-mullish font-extrabold text-2xl"
+                        class="font-mullish font-extrabold text-xl md:text-2xl"
                         >Lorem ipsum</h2>
 
                         <h5
-                        class="font-mullish font-medium text-xl"
+                        class="font-mullish font-medium text-base md:text-xl"
                         >Product Manager</h5>
 
                         <img src="./images/assets/fake-company-logo.png" alt=""
@@ -1341,25 +1346,25 @@
 
         <!-- CTA section -->
         <section
-        class="bg-[url(./images/assets/CTABG.svg)] bg-cover p-10 z-10 relative"
+        class="md:bg-[url(./images/assets/CTABG.svg)]  bg-no-repeat bg-cover p-10 z-10 relative bg-gradient-to-r from-purple-500 via-current to-pink-500"
         >
 
             <!-- top level div -->
 
-            <div class="flex relative w-11/12 max-w-[1080px] mx-auto py-10  justify-between px-6 gap-x-10">
+            <div class="flex flex-col md:flex-row relative w-11/12 max-w-[1080px] mx-auto py-10  md:justify-between px-1 md:px-6 gap-x-10">
 
 
                 <!-- content container -->
                 <div class="flex flex-col justify-evenly">
 
                     <h1
-                    class="font-mullish font-extrabold text-white text-2xl"
+                    class="font-mullish font-extrabold text-white text-xl md:text-2xl "
                     >Supercharge your business with Razorpay</h1>
 
                     <div class="w-6 h-1 bg-greenLight "></div>
 
                     <p
-                    class="text-white leading-7 font-mullish w-[70%]"
+                    class="text-white leading-7 font-mullish w-full md:w-[70%]"
                     >
                         Sign up now to experience the future of payments and offer your customers the best checkout experience.</p>
 
@@ -1398,8 +1403,8 @@
                     </ul>
 
                     <button class="text-lightBlue300 py-3 px-5 bg-white border rounded text-sm transition-all duration-200
-                     font-bold text-center hover:text-lightBlue500 hover:border-lightBlue hover:border flex items-center
-                     w-[23%]" > 
+                     font-bold text-center hover:text-lightBlue500 hover:border-lightBlue hover:border flex items-center w-full
+                     md:w-[23%]" > 
                      Sign Up Now
                      <svg viewBox="0 0 24 24" focusable="false" class="w-[15px] h-[15px] ml-2 relative bottom-0">
                         <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
@@ -1432,7 +1437,7 @@
         >
 
         <!-- four div -->
-            <div class="w-11/12 max-w-[1080px] mx-auto relative grid grid-cols-4 gap-x-5 ">
+            <div class="w-11/12 max-w-[1080px] mx-auto relative grid grid-cols-2 md:grid-cols-4 gap-x-5 ">
 
 
                 <!-- first box -->
